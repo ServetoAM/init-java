@@ -1,8 +1,9 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+
 public class Main {
-    public static int division(int a, int b) throws Exception {
+    /*public static int division(int a, int b) throws Exception {
 
         if (b == 0) {
             throw new Exception("Tu ne peux pas diviser un nombre par zero");
@@ -21,7 +22,7 @@ public class Main {
         int result = a / b;
 
         return result;
-    }
+    }*/
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
