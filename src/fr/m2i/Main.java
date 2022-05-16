@@ -149,10 +149,31 @@ public class Main {
 
     }
 } V3 */
+package fr.m2i;
 
 public class Main {
-    public static void main(String[] args){
 
+    public static void main(String[] args) throws Exception {
+        Car titine = new Car();
+        System.out.println("Current Gas = " + titine.currentGas);
+        System.out.println("Gas Capacity = " + titine.gasCapacity);
+        System.out.println("Gas Consumption = " + titine.gasConsumption);
+        System.out.println("Passenger Capacity = " + titine.passengerCapacity);
+        System.out.println("Speed = " + titine.speed);
+        System.out.println("----- 4L Story -----");
+        while (titine.currentGas > 0) {
+            try {
+                titine.drive();
+            } catch (Exception e) {
+               break;
+            }
+        }
+        System.out.println("T'es à sec Jacky !");
+        System.out.println("----- End of Story -----");
+        System.out.println("Current Gas = " + titine.currentGas);
+        System.out.println("Gas Capacity = " + titine.gasCapacity);
+        System.out.println("Gas Consumption = " + titine.gasConsumption);
+        System.out.println("Passenger Capacity = " + titine.passengerCapacity);
+        System.out.println("Speed = " + titine.speed);
     }
-
 }
